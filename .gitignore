@@ -1,0 +1,5 @@
+config.js
+privkey
+public/
+node_modules/
+.git/

@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hourly Monitoring | META</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../assets/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Datepicker-->
+    <link rel="stylesheet" href="../assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../assets/plugins/iCheck/all.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../assets/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+        folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../assets/dist/css/skins/_all-skins.min.css">
+    <!--FAB4-->
+    <link rel="stylesheet" href="../assets/dist/css/fab4meta.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="sidebar-mini skin-black-light">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>F</b>M</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>FAB4</b>META</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less
+            <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="label label-success"></span>
+                </a>
+                <ul class="dropdown-menu">
+                <li class="header">You have 0 new messages</li>
+                <li>
+                    <!--
+                    <ul class="menu">
+                    <li>
+                        <a href="#">
+                        <div class="pull-left">
+                            <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a>
+                    </li>
+                    </ul>
+                    
+                </li>
+                <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less 
+            <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning"></span>
+                </a>
+                <ul class="dropdown-menu">
+                <li class="header">You have 0 new notifications</li>
+                <li>
+                    <!-- inner menu: contains the actual data 
+                    <ul class="menu">
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                    </li>
+                    </ul>
+                    
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+                </ul>
+            </li>
+            <!-- Tasks: style can be found in dropdown.less 
+            <li class="dropdown tasks-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-flag-o"></i>
+                <span class="label label-danger"></span>
+                </a>
+                <ul class="dropdown-menu">
+                <li class="header">You have 0 new action requests</li>
+                <li>
+                    <!-- inner menu: contains the actual data
+                    <ul class="menu">
+                    <li>
+                        <a href="#">
+                        <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                        </h3>
+                        <div class="progress xs">
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                    </ul>
+                    
+                </li>
+                <li class="footer">
+                    <a href="#">View all tasks</a>
+                </li>
+                </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less 
+            <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../assets/dist/img/avatar5.png" class="user-image" alt="User Image">
+                <span class="hidden-xs">Guest</span>
+                </a>
+                <ul class="dropdown-menu">
+                <!-- User image 
+                <li class="user-header">
+                    <img src="../assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
+
+                    <p>
+                    Guest
+                    <small>Anonymous Team</small>
+                    </p>
+                </li>
+                <!-- Menu Body 
+                <li class="user-body">
+                    <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <a href="#">Action Requests</a>
+                    </div>
+                    </div>
+                    <!-- /.row 
+                </li>
+                <!-- Menu Footer
+                <li class="user-footer">
+                    <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                    <a href="/logout" class="btn btn-default btn-flat">Logout</a>
+                    </div>
+                </li>
+                </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button
+            <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            </li>
+            -->
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+        <!-- Sidebar user panel 
+        <div class="user-panel">
+            <div class="pull-left image">
+            <img src="../assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+            <p>Guest</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        -->
+        <!-- search form 
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">MAIN NAVIGATION</li>
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i> <span>Home</span>
+                </a>
+            </li>
+            <li class="treeview active">
+            <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="active"><a href="/hourly"><i class="ion ion-ios-close-outline" style="color:red;"></i> Hourly WIP & Outs </a></li>
+                <li><a href="/lot?type=aging"><i class="ion ion-ios-checkmark-outline" style="color:green;"></i> Aging Lots </a></li>
+                <li><a href="/reports?type=cycletime"><i class="ion ion-ios-checkmark-outline" style="color:green;"></i> Cycle Time </a></li>
+                <li><a href="/th?filename=ndep.txt"><i class="ion ion-ios-checkmark-outline" style="color:green;"></i> Tube Health </a></li>
+            </ul>
+            </li>
+
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-edit"></i> <span>Prototype</span>
+                <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="/coa"><i class="ion ion-ios-checkmark-outline" style="color:green;"></i> Certificate of Analysis </a></li>
+                <li><a href="/activity"><i class="ion ion-ios-checkmark-outline" style="color:green;"></i> Engineering Activity </a></li>
+            </ul>
+            </li>
+            <!---
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-pie-chart"></i>
+                <span>Reports</span>
+                <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-circle-o"></i>
+                        <span>Fab4 Cycletime</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Overall Cycletime</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Cluster 1 Cycletime</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Cluster 2 Cycletime</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Cluster 3 Cycletime</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Cluster 4 Cycletime</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Cluster 5 Cycletime</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Prototypes</span>
+                <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> Certificate of Analysis</a></li>
+            </ul>
+            </li>
+            <li class="header">SUPPORT</li>
+            <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            -->
+        </ul>
+        <!--reminder ad-->
+        <div id="reminder-ad" class="show color_5">
+            <p class="reminder-ad-p">Hello Fab4,</p>
+            <p class="reminder-ad-p">This app is a platform for prototypes. Any issues, downtime and delays are expected.</p>
+            <p class="reminder-ad-p">Thank you! ❤️</p>
+        </div>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+        <h1><i class="ion ion-ios-close-outline" style="color:red;"></i>
+            Reports
+            <small>hourly monitoring dashboard</small>
+            <small><label class="label label-warning">under construction</label></small>
+        </h1>
+        <!--
+        <ol class="breadcrumb">
+            <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Reports</a></li>
+        </ol>
+        -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-box info-hourly">
+                        <span class="info-box-icon bg-aqua info-hourly-logo"><i class="ion ion-ios-calendar-outline"></i></span>
+                        <div class="info-box-content info-content-hourly">
+                            <form id="hourly_form">
+                                <input type="hidden" name="outs_field" value="outs">
+                                <div class="col-xs-3 no-padding">
+                                    <div class="hourly-group form-group">
+                                        <div class="input-group date">
+                                            <input type="text" class="form-control pull-right" name="date_time" id="datepicker" data-toggle="tooltip" title="Click to select date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 no-padding">
+                                    <div class="hourly-group form-group" style="text-align: center; line-height: 30px;">
+                                        <label class="hourly-label" data-toggle="tooltip" title="Click to select All shifts">
+                                            <input type="radio" name="shift" value="All" id="shiftall" class="minimal"  checked=""> All
+                                        </label>
+                                        <label class="hourly-label" data-toggle="tooltip" title="Click to select AM shift">
+                                            <input type="radio" name="shift" id="shiftam" value="AM" class="minimal"> AM
+                                        </label>
+                                        <label class="hourly-label" data-toggle="tooltip" title="Click to select PM shift">
+                                            <input type="radio" name="shift" id="shiftpm" value="PM" class="minimal"> PM
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 no-padding">
+                                    <div class="hourly-group form-group">
+                                        <button type="submit" id="hourlysubmit" class="btn btn-default btn-block btn-flat" data-toggle="tooltip" title="Click to refresh">
+                                            Refresh
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="responseDiv"></div>
+                            </form>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#outs" data-toggle="tab">OUTS</a>
+                            </li>
+                            <li class="">
+                                <a href="#wip" data-toggle="tab">WIP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content no-padding">
+                            <div class="tab-pane active" id="outs">
+                                <div class="box hourly-box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Hourly Outs Monitoring</h3>
+                                        <div class="box-tools pull-right">
+                                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body no-pad-top">
+                                        <table id="hourly_outs" class="hourly-outs-table table-hover table-bordered">
+                                            <tbody>
+                                                <% if(api_obj.rows) { %>
+                                                    <!-- First Row -->
+                                                    <tr>
+                                                        <th></th>
+                                                        <th class="th-format-process">Process</th>
+                                                    <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(i !== 12) { %>
+                                                        <th class="th-format-process"><%= api_obj.rows[i].EVENT_HOUR_INTERVAL %></th>
+                                                        <% } %>
+                                                    <% } %>
+                                                    </tr>
+                                                    <!-- Table Rows (this should be looped but cant due to fixed property name) -->
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[6].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[6].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].DAMAGE_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].DAMAGE_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[9].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[9].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].POLY_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].POLY_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[12].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[12].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].BSGDEP_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].BSGDEP_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[15].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[15].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NTM_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].NTM_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[18].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[18].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NOXE_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].NOXE_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[21].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[21].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NDEP_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].NDEP_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[24].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[24].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PTM_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PTM_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[27].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[27].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].TOXE_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].TOXE_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[30].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[30].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].CLEANTEX_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].CLEANTEX_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[33].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[33].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PDRIVE_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PDRIVE_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[36].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[36].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].ARC_BARC_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].ARC_BARC_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[39].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[39].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PBA_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PBA_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[42].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[42].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].LCM_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].LCM_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[45].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[45].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].SEED_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].SEED_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[48].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[48].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].FGA_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].FGA_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[51].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[51].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PLM_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PLM_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[54].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[54].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].EDG_CTR_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].EDG_CTR_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[57].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[57].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PLATING_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PLATING_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[60].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[60].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].ETCHBK_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].ETCHBK_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[63].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[63].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].HST_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].HST_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[66].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[66].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].VISUAL_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].VISUAL_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[69].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[69].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].TEST_OUTS) { %>
+                                                            <% if(i !== 12) { %>
+                                                            <td><%= api_obj.rows[i].TEST_OUTS %></td>
+                                                            <% } %>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[72].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[72].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PACKAGE_STAGE_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].PACKAGE_STAGE_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[75].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[75].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].FG_OUTS) { %>
+                                                        <td><%= api_obj.rows[i].FG_OUTS %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+
+
+
+                                                <% } %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div classs="box-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="wip">
+                                <div class="box hourly-box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Hourly WIP Monitoring</h3>
+                                        <div class="box-tools pull-right">
+                                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body no-pad-top">
+                                        <table id="hourly_WIP" class="hourly-outs-table table-hover table-bordered">
+                                            <tbody>
+                                                <% if(api_obj.rows) { %>
+                                                    <!-- First Row -->
+                                                    <tr>
+                                                        <th></th>
+                                                        <th class="th-format-process">Process</th>
+                                                    <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(i !== 12) { %>
+                                                        <th class="th-format-process"><%= api_obj.rows[i].EVENT_HOUR_INTERVAL %></th>
+                                                        <% } %>
+                                                    <% } %>
+                                                    </tr>
+                                                    <!-- Table Rows (this should be looped but cant due to fixed property name) -->
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[5].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[5].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].DAMAGE_WIP) { %>
+                                                        <td><%= api_obj.rows[i].DAMAGE_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[8].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[8].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].POLY_WIP) { %>
+                                                        <td><%= api_obj.rows[i].POLY_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[11].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[11].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].BSGDEP_WIP) { %>
+                                                        <td><%= api_obj.rows[i].BSGDEP_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[14].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[14].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NTM_WIP) { %>
+                                                        <td><%= api_obj.rows[i].NTM_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[17].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[17].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NOXE_WIP) { %>
+                                                        <td><%= api_obj.rows[i].NOXE_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[20].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[20].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].NDEP_WIP) { %>
+                                                        <td><%= api_obj.rows[i].NDEP_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[23].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[23].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PTM_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PTM_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[26].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[26].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].TOXE_WIP) { %>
+                                                        <td><%= api_obj.rows[i].TOXE_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[29].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[29].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].CLEANTEX_WIP) { %>
+                                                        <td><%= api_obj.rows[i].CLEANTEX_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[32].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[32].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PDRIVE_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PDRIVE_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[35].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[35].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].ARC_BARC_WIP) { %>
+                                                        <td><%= api_obj.rows[i].ARC_BARC_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[38].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[38].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PBA_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PBA_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[41].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[41].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].LCM_WIP) { %>
+                                                        <td><%= api_obj.rows[i].LCM_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[44].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[44].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].SEED_WIP) { %>
+                                                        <td><%= api_obj.rows[i].SEED_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[47].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[47].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].FGA_WIP) { %>
+                                                        <td><%= api_obj.rows[i].FGA_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[50].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[50].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PLM_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PLM_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[53].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[53].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].EDG_CTR_WIP) { %>
+                                                        <td><%= api_obj.rows[i].EDG_CTR_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[56].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[56].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PLATING_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PLATING_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[59].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[59].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].ETCHBK_WIP) { %>
+                                                        <td><%= api_obj.rows[i].ETCHBK_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[62].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[62].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].HST_WIP) { %>
+                                                        <td><%= api_obj.rows[i].HST_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[65].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[65].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].VISUAL_WIP) { %>
+                                                        <td><%= api_obj.rows[i].VISUAL_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[68].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[68].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].TEST_WIP) { %>
+                                                            <% if(i !== 12) { %>
+                                                            <td><%= api_obj.rows[i].TEST_WIP %></td>
+                                                            <% } %>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[71].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[71].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].PACKAGE_STAGE_WIP) { %>
+                                                        <td><%= api_obj.rows[i].PACKAGE_STAGE_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="plusminus" class="plusminus-<%= api_obj.metaData[74].name %>" data-toggle="tooltip" title="Click to see outs per equipment"><span>+</span></td>
+                                                        <td class="td-format-process"><%= api_obj.metaData[74].name %></td>
+                                                        <% for(let i=0; i<api_obj.rows.length; i++) { %>
+                                                        <% if(api_obj.rows[i].FG_WIP) { %>
+                                                        <td><%= api_obj.rows[i].FG_WIP %></td>
+                                                        <% } %>
+                                                        <% } %>
+                                                    </tr>
+
+
+
+                                                <% } %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div classs="box-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+        </div>
+        <strong>M E T A</strong> - Manufacturing & Engineering Tool App
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane" id="control-sidebar-home-tab">
+            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <ul class="control-sidebar-menu">
+            <li>
+                <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                    <p>Will be 23 on April 24th</p>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-user bg-yellow"></i>
+
+                <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                    <p>New phone +1(800)555-1234</p>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+                <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                    <p>nora@example.com</p>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+                <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                    <p>Execution time 5 seconds</p>
+                </div>
+                </a>
+            </li>
+            </ul>
+            <!-- /.control-sidebar-menu -->
+
+            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <ul class="control-sidebar-menu">
+            <li>
+                <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                    Custom Template Design
+                    <span class="label label-danger pull-right">70%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                    Update Resume
+                    <span class="label label-success pull-right">95%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                    Laravel Integration
+                    <span class="label label-warning pull-right">50%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                    Back End Framework
+                    <span class="label label-primary pull-right">68%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                </div>
+                </a>
+            </li>
+            </ul>
+            <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <!-- Stats tab content -->
+        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <!-- /.tab-pane -->
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+            <form method="post">
+            <h3 class="control-sidebar-heading">General Settings</h3>
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Report panel usage
+                <input type="checkbox" class="pull-right" checked>
+                </label>
+
+                <p>
+                Some information about this general settings option
+                </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Allow mail redirect
+                <input type="checkbox" class="pull-right" checked>
+                </label>
+
+                <p>
+                Other sets of options are available
+                </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Expose author name in posts
+                <input type="checkbox" class="pull-right" checked>
+                </label>
+
+                <p>
+                Allow the user to show his name in blog posts
+                </p>
+            </div>
+            <!-- /.form-group -->
+
+            <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Show me as online
+                <input type="checkbox" class="pull-right" checked>
+                </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Turn off notifications
+                <input type="checkbox" class="pull-right">
+                </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+                <label class="control-sidebar-subheading">
+                Delete chat history
+                <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                </label>
+            </div>
+            <!-- /.form-group -->
+            </form>
+        </div>
+        <!-- /.tab-pane -->
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+        immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../assets/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- Datepicker-->
+<script src="../assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- iCheck -->
+<script src="../assets/plugins/iCheck/icheck.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/dist/js/adminlte.min.js"></script>
+<!-- Hourly script -->
+<script>
+  $(function() {
+    $('.sidebar-menu').tree();
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-green',
+      radioClass   : 'iradio_minimal-green'
+    });
+
+    //datepicker
+    //Date picker
+    $('#datepicker').datepicker(
+        {
+            format:'mm-dd-yy',
+            autoclose: true,
+            endDate: new Date(),
+        }).datepicker("setDate",'now');
+  });
+</script>
+<!-- API Response handler -->
+<script>
+    window.addEventListener('load', function(){
+
+        function goHourly(){
+
+            let xhr = new XMLHttpRequest();
+            let fd = new FormData(form); // bind form data object and form element
+            
+            xhr.addEventListener('load', function(event){
+                console.log(event.target.response);
+                let resFromServer = JSON.parse(event.target.response);
+                document.getElementById('responseDiv').style.display='block';
+                function resDiv(){
+                    let responseDiv = document.getElementById('responseDiv');
+                    
+                    if(resFromServer.err){
+                        document.getElementById('signinbutton').removeAttribute("disabled");
+
+                        if (responseDiv.classList) { 
+                            responseDiv.classList.add("responseDivErr");
+                            responseDiv.innerHTML = resFromServer.err
+                        } else {
+                            // For IE9
+                            var classes = responseDiv.className.split(" ");
+                            var i = classes.indexOf("responseDivErr");
+
+                            if (i >= 0) {
+                                classes.splice(i, 1);
+                            } else { 
+                                classes.push("responseDivErr");
+                                responseDiv.className = classes.join(" "); 
+                                responseDiv.innerHTML = resFromServer.err
+                            }
+                        }
+
+                    } else {
+
+                        if (responseDiv.classList) { 
+                            responseDiv.classList.add("responseDivSuccess");
+                            responseDiv.innerHTML = resFromServer.auth;
+                            
+                            let hideDiv = document.getElementById('toHideIfSuccess');
+                                hideDiv.style.display = "none";
+                                
+                            setTimeout(function(){
+                                window.location.href="/hourly";
+
+                            }, 10);
+
+                        } else {
+                            // For IE9
+                            var classes = responseDiv.className.split(" ");
+                            var i = classes.indexOf("responseDivSuccess");
+
+                            if (i >= 0) {
+                                classes.splice(i, 1);
+                            } else { 
+                                classes.push("responseDivSuccess");
+                                responseDiv.className = classes.join(" "); 
+                                responseDiv.innerHTML = resFromServer.auth;
+                                
+                                let hideDiv = document.getElementById('toHideIfSuccess');
+                                    hideDiv.style.display = "none";
+
+                                setTimeout(function(){
+                                    window.location.href="/hourly";
+                                }, 10);
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                resDiv();
+            });
+
+            xhr.addEventListener('error', function(event){
+                alert('Something went wrong.');
+            });
+
+            xhr.open('POST', '/api/hourly');
+            xhr.send(fd);
+
+        }
+
+        // access FORM element
+        let form = document.getElementById('hourly_form');
+        // take over submit event
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            goHourly();
+            document.getElementById('hourlysubmit').setAttribute("disabled", "disabled");
+            document.getElementById('datepicker').setAttribute("disabled", "disabled");
+            document.getElementById('shiftall').setAttribute("disabled", "disabled");
+            document.getElementById('shiftam').setAttribute("disabled", "disabled");
+            document.getElementById('shiftpm').setAttribute("disabled", "disabled");
+        });
+        
+    });
+</script>
+</body>
+</html>
